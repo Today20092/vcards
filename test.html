@@ -3,14 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download File</title>
+    <title>Linktree Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin: 0 0 20px;
+        }
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <a href="https://raw.githubusercontent.com/Today20092/tampashutterwebsite/main/content/vcard/ayoubabedrabbovcard-4.0.vcf" download="ayoubabedrabbovcard-4.0.vcf">Download vCard</a>
-    <script>
-        window.onload = function() {
-            document.querySelector('a').click();
-        };
-    </script>
+    <div class="container">
+        <h1>Name</h1>
+        <a href="path/to/your/file" download>Download</a>
+    </div>
 </body>
 </html>
