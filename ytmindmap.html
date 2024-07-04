@@ -1,20 +1,29 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      http-equiv="refresh"
-      content="0; url=https://excalidraw.com/#json=u9rSFP6Hn9w0Qh48foBKA,6Q8fiJSEuntIsK4KdOXwWg"
-    />
-    <title>Redirecting...</title>
+    <script type="text/javascript">
+      // Define the redirect URL in one place
+      var redirectUrl =
+        "https://excalidraw.com/#json=u9rSFP6Hn9w0Qh48foBKA,6Q8fiJSEuntIsK4KdOXwWg";
+
+      // Set the meta refresh tag dynamically
+      document.write(
+        '<meta http-equiv="refresh" content="5; url=' + redirectUrl + '">'
+      );
+
+      // Redirect immediately using JavaScript
+      window.location.href = redirectUrl;
+    </script>
   </head>
   <body>
     <p>
-      If you are not redirected automatically, please
-      <a
-        href="https://excalidraw.com/#json=u9rSFP6Hn9w0Qh48foBKA,6Q8fiJSEuntIsK4KdOXwWg"
-        >click here</a
-      >.
+      If you are not redirected automatically, follow this
+      <a id="redirectLink" href="#">link to the new page</a>.
     </p>
+    <p>You will be redirected in 5 seconds...</p>
+    <script type="text/javascript">
+      // Set the href of the fallback link dynamically
+      document.getElementById("redirectLink").href = redirectUrl;
+    </script>
   </body>
 </html>
