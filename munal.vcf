@@ -1,0 +1,21 @@
+BEGIN:VCARD
+VERSION:3.0
+
+N;CHARSET=UTF-8:Abedrabbo;Munal;; ;
+FN:Munal Abedrabbo
+BDAY:-----08-01
+SORT-STRING:Abedrabbo
+TZ:America/New_York
+
+COMPANY:Berkshire Hathawy
+TITLE:Real Estate Agent
+ADR;CHARSET=UTF-8;TYPE=WORK:;;;Tampa;Florida;33647;
+
+TEL;TYPE=mobile,sms,voice,pref,cell,msg,:+18139006363
+EMAIL;TYPE=Email:Ayoub@AyoubAbed.xyz
+
+URL;TYPE=Website:https://linktr.ee/justtodayonly
+
+
+NOTE;CHARSET=UTF-8:
+END:VCARD
