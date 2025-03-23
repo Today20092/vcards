@@ -1,29 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <script type="text/javascript">
-      // Define the redirect URL in one place
-      var redirectUrl =
-        "https://excalidraw.com/#json=TzwerdcOxo1KCcgs3WG6g,pBr7rEyJzu2J_QJ9-Almdg";
-
-      // Set the meta refresh tag dynamically
-      document.write(
-        '<meta http-equiv="refresh" content="5; url=' + redirectUrl + '">'
-      );
-
-      // Redirect immediately using JavaScript
-      window.location.href = redirectUrl;
-    </script>
-  </head>
-  <body>
-    <p>
-      If you are not redirected automatically, follow this
-      <a id="redirectLink" href="#">link to the new page</a>.
-    </p>
-    <p>You will be redirected in 5 seconds...</p>
-    <script type="text/javascript">
-      // Set the href of the fallback link dynamically
-      document.getElementById("redirectLink").href = redirectUrl;
-    </script>
-  </body>
+<head>
+  <script>
+    const redirectUrl = "https://excalidraw.com/#json=TzwerdcOxo1KCcgs3WG6g,pBr7rEyJzu2J_QJ9-Almdg";
+    window.location.href = redirectUrl;
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0;url=https://excalidraw.com/#json=TzwerdcOxo1KCcgs3WG6g,pBr7rEyJzu2J_QJ9-Almdg">
+  </noscript>
+</head>
+<body>
+  <p>Redirecting... <a id="link" href="https://excalidraw.com/#json=TzwerdcOxo1KCcgs3WG6g,pBr7rEyJzu2J_QJ9-Almdg">Click here</a> if you are not redirected automatically.</p>
+  <script>
+    document.getElementById("link").href = redirectUrl;
+  </script>
+</body>
 </html>
